@@ -57,6 +57,12 @@ var edges_text = svg.append("g").selectAll(".edgelabel")
     .enter()
     .append("text")
     .style("pointer-events", "none")
+    .style('fill', function (node) {
+        var color;
+        var link = links[node.index];
+        color = "#A254A2";
+        return color;
+    })
     .attr({
         'class': 'edgelabel',
         'id': function (d, i) { return 'edgepath' + i; },
