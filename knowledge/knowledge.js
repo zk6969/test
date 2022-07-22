@@ -60,7 +60,7 @@ var edges_text = svg.append("g").selectAll(".edgelabel")
     .style('fill', function (node) {
         var color;
         var link = links[node.index];
-        color = "#A254A2";
+        color = "#00bcd4";
         return color;
     })
     .attr({
